@@ -15,9 +15,9 @@ document.addEventListener("DOMContentLoaded", () => {
   const phrases = [
     "Deep Learning Enthusiast",
     "ML & NLP Enthusiast",
-    "Data Science Student @ Rutgers",
+    "Master's in Data Science Student @ Rutgers",
     "RAG & Agentic AI Explorer",
-    "Code-Mixed NLP Researcher"
+    "NLP Researcher"
   ];
   const type = 60, del = 40, hold = 1200, gap = 300;
   let i = 0, j = 0, delMode = false;
