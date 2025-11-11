@@ -1,146 +1,74 @@
-/* ========== Base Styles ========== */
-:root {
-    --bg-gradient: linear-gradient(135deg, #00c6ff, #0072ff);
-    --text-light: #f8f9fa;
-    --text-muted: #adb5bd;
-    --accent: #66e3ff;
-    --card-bg: rgba(255, 255, 255, 0.05);
-    --shadow: rgba(0, 0, 0, 0.3);
+/* ===== Theme ===== */
+:root{
+    --bg:#0b1418;
+    --bg-alt:#0e1a20;
+    --text:#e9eef3;
+    --muted:#a9b6c2;
+    --card:#0f1f26;
+    --stroke:#1b2a33;
+    --accent:#49d3ff;
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0;padding:0}
+  body{font-family:Inter,system-ui,Segoe UI,Roboto,Helvetica,Arial,sans-serif;background:radial-gradient(1200px 600px at 20% -10%, #12313f 0%, transparent 60%), var(--bg);color:var(--text);line-height:1.65}
+  img{max-width:100%;display:block}
+  a{color:var(--accent);text-decoration:none}
+  .container{max-width:1100px;margin:0 auto;padding:0 20px}
+  .section{padding:84px 0}
+  .section-alt{background:linear-gradient(0deg, rgba(13,24,29,.7), rgba(13,24,29,.7)), var(--bg-alt);border-top:1px solid var(--stroke);border-bottom:1px solid var(--stroke)}
+  .section-title{font-size:1.9rem;margin:0 0 22px 0;letter-spacing:.2px}
+  
+  /* ===== Header ===== */
+  .site-header{position:sticky;top:0;z-index:40;border-bottom:1px solid var(--stroke);background:rgba(11,20,24,.7);backdrop-filter:saturate(140%) blur(10px)}
+  .header-row{display:flex;align-items:center;justify-content:space-between;padding:14px 0}
+  .brand{font-weight:800;color:var(--accent)}
+  .nav a{margin-left:16px;color:#d3dee7}
+  .nav a:hover{color:#fff}
+  
+  /* ===== Hero ===== */
+  .hero-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:32px;align-items:center}
+  .hero-copy h1{font-size:2.6rem;margin:.2rem 0 .6rem}
+  .sub{color:var(--accent);font-weight:600;margin:-6px 0 12px}
+  .lead{color:#cfe0eb;max-width:620px}
+  .actions{margin-top:18px}
+  .btn{display:inline-block;background:var(--accent);color:#04222c;padding:10px 16px;border-radius:10px;font-weight:700;border:1px solid transparent}
+  .btn.ghost{background:transparent;color:var(--accent);border-color:var(--accent)}
+  .btn.small{padding:8px 12px;border-radius:8px;font-weight:600}
+  .hero-photo img{border-radius:18px;border:1px solid var(--stroke);box-shadow:0 16px 36px rgba(0,0,0,.35)}
+  
+  /* ===== Cards & grids ===== */
+  .card{background:var(--card);border:1px solid var(--stroke);border-radius:16px;padding:18px}
+  .grid3{display:grid;gap:18px;grid-template-columns:repeat(3,1fr)}
+  .grid2{display:grid;gap:18px;grid-template-columns:repeat(2,1fr)}
+  .project p{color:#cfd9e2;margin:.35rem 0 .8rem}
+  .muted{color:var(--muted)}
+  
+  .info-cards{display:grid;gap:18px;grid-template-columns:repeat(3,1fr)}
+  
+  /* ===== Skills ===== */
+  .pilllist{display:flex;flex-wrap:wrap;gap:10px;list-style:none;padding-left:0;margin:10px 0 24px}
+  .pilllist li{background:#0d1a20;border:1px solid var(--stroke);border-radius:999px;padding:8px 12px}
+  .tools{display:flex;gap:20px;flex-wrap:wrap;margin-top:6px}
+  .tools figure{width:92px;text-align:center}
+  .tools figcaption{font-size:.9rem;color:#c3d1dc;margin-top:6px}
+  
+  /* ===== Research badges ===== */
+  .badges{display:flex;gap:8px;flex-wrap:wrap;margin:.6rem 0}
+  .badge{background:#0d1a20;border:1px solid var(--stroke);border-radius:999px;padding:4px 10px;font-size:.78rem;color:#dbe7f1}
+  
+  /* ===== Contact & Footer ===== */
+  .contact{list-style:none;padding-left:0}
+  .contact li{margin:6px 0}
+  .site-footer{border-top:1px solid var(--stroke);padding:28px 0;background:#0a1519;color:#a9bac6}
+  
+  /* ===== Responsive ===== */
+  @media (max-width: 960px){
+    .hero-grid{grid-template-columns:1fr;gap:22px}
+    .grid3{grid-template-columns:1fr 1fr}
+    .info-cards{grid-template-columns:1fr 1fr}
+  }
+  @media (max-width: 640px){
+    .grid3,.grid2,.info-cards{grid-template-columns:1fr}
+    .hero-copy h1{font-size:2.15rem}
   }
   
-  * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  body {
-    font-family: 'Inter', system-ui, -apple-system, sans-serif;
-    background: var(--bg-gradient);
-    color: var(--text-light);
-    line-height: 1.7;
-    overflow-x: hidden;
-  }
-  
-  /* ========== Header ========== */
-  header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 8%;
-    position: sticky;
-    top: 0;
-    backdrop-filter: blur(10px);
-    background: rgba(15, 32, 39, 0.6);
-  }
-  
-  header .logo {
-    font-weight: 700;
-    font-size: 1.4rem;
-    color: var(--accent);
-  }
-  
-  header nav a {
-    margin-left: 20px;
-    color: var(--text-light);
-    text-decoration: none;
-    transition: 0.2s;
-  }
-  
-  header nav a:hover {
-    color: var(--accent);
-  }
-  
-  /* ========== Hero Section ========== */
-  .hero {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    min-height: 90vh;
-    text-align: center;
-    padding: 80px 20px;
-  }
-  
-  .hero h1 {
-    font-size: 2.8rem;
-    font-weight: 700;
-    margin-bottom: 12px;
-  }
-  
-  .hero h2 {
-    font-size: 1.6rem;
-    font-weight: 400;
-    color: var(--accent);
-    margin-bottom: 20px;
-  }
-  
-  .hero p {
-    font-size: 1.05rem;
-    color: var(--text-muted);
-    max-width: 600px;
-    margin: 0 auto 24px;
-  }
-  
-  .hero img {
-    width: 220px;
-    height: 220px;
-    border-radius: 50%;
-    object-fit: cover;
-    margin-top: 30px;
-    box-shadow: 0 0 25px var(--shadow);
-    border: 2px solid var(--accent);
-  }
-  
-  /* ========== Buttons ========== */
-  .btn {
-    display: inline-block;
-    margin: 8px;
-    padding: 10px 20px;
-    border-radius: 8px;
-    border: 1px solid var(--accent);
-    color: var(--text-light);
-    background: transparent;
-    transition: all 0.3s ease;
-    font-weight: 600;
-  }
-  
-  .btn:hover {
-    background: var(--accent);
-    color: #0f2027;
-  }
-  
-  /* ========== Section Layout ========== */
-  .section {
-    padding: 100px 8%;
-  }
-  
-  .section h2 {
-    font-size: 2rem;
-    margin-bottom: 30px;
-    text-align: center;
-    color: var(--accent);
-  }
-  
-  /* ========== Footer ========== */
-  footer {
-    text-align: center;
-    padding: 40px;
-    background: rgba(0, 0, 0, 0.4);
-    font-size: 0.9rem;
-    color: var(--text-muted);
-  }
-  
-  /* ========== Responsive ========== */
-  @media (max-width: 768px) {
-    .hero h1 {
-      font-size: 2rem;
-    }
-    .hero h2 {
-      font-size: 1.2rem;
-    }
-    .hero img {
-      width: 160px;
-      height: 160px;
-    }
-  }

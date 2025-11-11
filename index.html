@@ -1,230 +1,179 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Siritha Chidipothu – Master's in Data Science at Rutgers</title>
-<meta name="description" content="Personal portfolio website showcasing projects, skills, and contact information." />
-<link rel="preconnect" href="https://fonts.googleapis.com" />
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
-<link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Siritha Chidipothu – ML & NLP</title>
+  <meta name="description" content="Portfolio of Siritha Chidipothu: ML & NLP projects, research, skills, and contact." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-<a class="skip-link" href="#main">Skip to main content</a>
-<header class="container header">
-<div class="logo">Siritha Chidipothu</div>
-<nav class="nav" aria-label="Primary">
-<a href="#home">Home</a>
-<a href="#about">About</a>
-<a href="#projects">Projects</a>
-<a href="#research">Research</a>
-<a href="#skills">Skills</a>
-<a href="#contact">Contact</a>
 
-</nav>
-</header>
-<main id="main">
-    <!-- Hero -->
-    <section class="hero" id="home">
-        <h1>Hello, I'm Siritha Chidipothu</h1>
-        <h2>I'm an ML & NLP Enthusiast</h2>
-        <p>Welcome to my personal site where I share projects, ideas, and my journey in data science and AI.</p>
-        <div>
-          <a href="#projects" class="btn">View Projects</a>
-          <a href="#contact" class="btn">Contact Me</a>
-        </div>
-        <img src="assets/avatar.png" alt="Portrait of Siritha Chidipothu" />
-      </section>
-    <!-- About -->
-<section id="about" class="section container">
-    <h2>About Me</h2>
-    <p>
-    I am a Machine Learning Engineer, Deep Learning enthusiast, and developer—
-    passionate about building data‑driven systems.
-    </p>
-    <div class="about-cards">
-    <article class="card">
-    <h3>Education</h3>
-    <p>Master's in Data Science, Rutgers University</p>
-    </article>
-    <article class="card">
-    <h3>Experience</h3>
-    <p>Research Assistant at Rutgers • Aspiring Data Engineer</p>
-    </article>
-    <article class="card">
-    <h3>Location</h3>
-    <p>New Jersey, United States of America</p>
-    </article>
-    <article class="card">
-    <h3>Languages</h3>
-    <p>English • Telugu • Hindi</p>
-    </article>
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container header-row">
+      <a class="brand" href="#home">Siritha Chidipothu</a>
+      <nav class="nav" aria-label="Primary">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#research">Research</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+      </nav>
     </div>
-    <p>
-        When I'm not working, I explore new technologies, contribute to open source, and read books.
-</p>
-<p>
-<a class="btn small" href="#" target="_blank" rel="noopener">Resume</a>
-</p>
-</section>
+  </header>
 
+  <main>
 
-<!-- Projects -->
-<section id="projects" class="section container">
-<h2>My Projects</h2>
-<div class="grid3">
-<article class="card project">
-<h3>Credit Risk Model</h3>
-<p>End‑to‑end pipeline with feature engineering, Random Forest/XGBoost, and SHAP dashboards.</p>
-<a class="btn small" href="#" target="_blank">GitHub</a>
-</article>
-<article class="card project">
-<h3>Code‑Mixed NER</h3>
-<p>Fine‑tuned mBERT/XLM‑R for named‑entities on English–Spanish code‑mixed social text.</p>
-<a class="btn small" href="#" target="_blank">GitHub</a>
-</article>
-<article class="card project">
-<h3>Lung Disease Detection</h3>
-<p>YOLO/EfficientNet for TB vs Pneumonia classification on chest X‑rays; FastAPI inference API.</p>
-<a class="btn small" href="#" target="_blank">GitHub</a>
-</article>
-</div>
-</section>
-
-<!-- Research -->
-<section id="research" class="section container">
-    <h2>Research</h2>
-  
-    <div class="papers">
-      <!-- Research Paper -->
-      <article class="paper card">
-        <div class="paper-header">
-          <h3>Societal Impacts and Public Perception of Chatbots: Implications for Individuals and Organizations</h3>
-          <div class="badges">
-            <span class="badge">Chatbots</span>
-            <span class="badge">AI Ethics</span>
-            <span class="badge">Societal Impact</span>
+    <!-- Hero -->
+    <section id="home" class="section hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <h1>Hello, I’m <span class="accent">Siritha Chidipothu</span></h1>
+          <p class="sub">ML & NLP Enthusiast</p>
+          <p class="lead">I build data-driven applications and applied NLP/LLM systems. Explore my projects, research, and tools below.</p>
+          <div class="actions">
+            <a class="btn" href="#projects">View Projects</a>
+            <a class="btn ghost" href="#contact">Contact</a>
           </div>
         </div>
-  
-        <p class="paper-authors"><strong>Siritha Chidipothu</strong>, et al.</p>
-        <p class="paper-venue">
-          <em>ResearchGate Preprint, 2025 • DOI: 10.13140/RG.2.2.395721509</em>
-        </p>
-  
-        <div class="paper-actions">
-          <a class="btn small"
-             href="https://www.researchgate.net/publication/395721509_Societal_Impacts_and_Public_Perception_of_Chatbots_Implications_for_Individuals_and_Organizations?channel=doi&linkId=68d1cedf68064a19c0b9630b&showFulltext=true"
-             target="_blank" rel="noopener">
-            View Full Text (PDF)
-          </a>
+        <div class="hero-photo">
+          <img src="assets/avatar.png" alt="Portrait of Siritha Chidipothu" />
         </div>
-  
-        <details class="bibtex">
-          <summary>BibTeX</summary>
-  <pre><code>@article{chidipothu2025societal,
-    title={Societal Impacts and Public Perception of Chatbots: Implications for Individuals and Organizations},
-    author={Chidipothu, Siritha and Others},
-    year={2025},
-    journal={ResearchGate Preprint},
-    doi={10.13140/RG.2.2.395721509}
-  }</code></pre>
-        </details>
-      </article>
-    </div>
-  </section>
-  
-
-<!-- Skills -->
-<section id="skills" class="section container">
-    <h2>My Skills</h2>
-    
-    
-    <h3>Programming & Data</h3>
-    <ul class="pilllist">
-    <li>Python — Advanced</li>
-    <li>SQL — Advanced</li>
-    <li>Pandas</li>
-    <li>NumPy</li>
-    </ul>
-    
-    
-    <h3>Modeling & ML</h3>
-    <ul class="pilllist">
-    <li>TensorFlow</li>
-    <li>scikit‑learn</li>
-    <li>XGBoost</li>
-    <li>LightGBM</li>
-    <li>CatBoost</li>
-    </ul>
-    
-    
-    <h3>MLOps & Deployment</h3>
-    <ul class="pilllist">
-    <li>MLflow</li>
-    <li>ZenML</li>
-    <li>Docker</li>
-    <li>FastAPI</li>
-    </ul>
-    
-    
-    <h3>Tools & Platforms</h3>
-    <div class="tools">
-    <figure>
-    <img src="assets/icons/github.svg" alt="Git icon" />
-    <figcaption>Git</figcaption>
-    </figure>
-    <figure>
-    <img src="assets/icons/jupyter.svg" alt="Jupyter icon" />
-    <figcaption>Jupyter</figcaption>
-    </figure>
-    <figure>
-    <img src="assets/icons/vscode.svg" alt="VS Code icon" />
-    <figcaption>VS Code</figcaption>
-    </figure>
-    </div>
-
-    <details class="code-sample">
-        <summary>Python ML Code Sample</summary>
-        <pre><code># Machine Learning Pipeline with Scikit‑learn
-        from sklearn.model_selection import train_test_split
-        from sklearn.ensemble import RandomForestClassifier
-        from sklearn.datasets import load_iris
-        from sklearn.metrics import accuracy_score
-        
-        
-        X, y = load_iris(return_X_y=True)
-        X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.25, random_state=42)
-        
-        
-        model = RandomForestClassifier(n_estimators=200, random_state=42)
-        model.fit(X_train, y_train)
-        y_pred = model.predict(X_test)
-        print(f"Model accuracy: {accuracy_score(y_test, y_pred):.2f}")
-        </code></pre>
-        </details>
-        </section>
-        <!-- Contact -->
-<section id="contact" class="section container">
-    <h2>Contact Me</h2>
-    <p>Feel free to reach out for questions or opportunities.</p>
-    <ul class="contact">
-    <li><strong>Email:</strong> <a href="mailto:sirithachidipiothu@gmail.com">sirithachidipothu@gmail.com</a></li>
-    <li><strong>Location:</strong> City, Country</li>
-    </ul>
+      </div>
     </section>
-    </main>
-    
-    
-    <footer class="footer">
-    <div class="container">
-    <p>© <span id="year"></span> Your Name. All rights reserved.</p>
-    </div>
-    </footer>
-    
-    
-    <script src="script.js"></script>
-    </body>
-    </html>
 
+    <!-- About -->
+    <section id="about" class="section section-alt">
+      <div class="container">
+        <h2 class="section-title">About</h2>
+        <p class="max-700">
+          I’m a graduate student focused on Machine Learning and Natural Language Processing. I enjoy practical ML,
+          clean engineering, and communicating results clearly. Current interests: multilingual NLP, RAG, and agentic AI.
+        </p>
+        <div class="info-cards">
+          <article class="card">
+            <h3>What I Do</h3>
+            <p>Data prep, model training (sklearn/XGBoost/TF), evaluation, deployment (FastAPI/Docker), and simple MLOps.</p>
+          </article>
+          <article class="card">
+            <h3>Education</h3>
+            <p>Master’s in Data Science (Statistics track), Rutgers University.</p>
+          </article>
+          <article class="card">
+            <h3>Currently</h3>
+            <p>Building portfolio projects and writing about responsible AI & multilingual NLP.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="section">
+      <div class="container">
+        <h2 class="section-title">Projects</h2>
+
+        <div class="grid3">
+          <article class="card project">
+            <h3>Credit Risk Model</h3>
+            <p>Feature engineering + RF/XGBoost, realistic metrics, and SHAP explainability.</p>
+            <a class="btn small" href="#" target="_blank">GitHub</a>
+          </article>
+
+          <article class="card project">
+            <h3>Code-Mixed NER</h3>
+            <p>mBERT/XLM-R fine-tuning for named entities on English–Spanish social text.</p>
+            <a class="btn small" href="#" target="_blank">GitHub</a>
+          </article>
+
+          <article class="card project">
+            <h3>Lung Disease Detection</h3>
+            <p>YOLO/EfficientNet for TB vs Pneumonia classification; FastAPI inference API.</p>
+            <a class="btn small" href="#" target="_blank">GitHub</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Research -->
+    <section id="research" class="section section-alt">
+      <div class="container">
+        <h2 class="section-title">Research</h2>
+
+        <div class="grid2">
+          <article class="card paper">
+            <h3>Societal Impacts and Public Perception of Chatbots: Implications for Individuals and Organizations</h3>
+            <p class="muted">ResearchGate Preprint, 2025</p>
+            <p><strong>Siritha Chidipothu</strong>, et al.</p>
+            <div class="badges">
+              <span class="badge">Chatbots</span>
+              <span class="badge">AI Ethics</span>
+              <span class="badge">Societal Impact</span>
+            </div>
+            <div class="actions">
+              <a class="btn small" target="_blank" rel="noopener"
+                 href="https://www.researchgate.net/publication/395721509_Societal_Impacts_and_Public_Perception_of_Chatbots_Implications_for_Individuals_and_Organizations?channel=doi&linkId=68d1cedf68064a19c0b9630b&showFulltext=true">View Full Text</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="section">
+      <div class="container">
+        <h2 class="section-title">Skills</h2>
+
+        <h3 class="h3">Programming & Data</h3>
+        <ul class="pilllist">
+          <li>Python</li><li>SQL</li><li>Pandas</li><li>NumPy</li>
+        </ul>
+
+        <h3 class="h3">Modeling</h3>
+        <ul class="pilllist">
+          <li>scikit-learn</li><li>XGBoost</li><li>TensorFlow</li><li>LightGBM</li>
+        </ul>
+
+        <h3 class="h3">Tools</h3>
+        <div class="tools">
+          <figure>
+            <img src="assets/icons/github.svg" alt="Git" />
+            <figcaption>Git</figcaption>
+          </figure>
+          <figure>
+            <img src="assets/icons/jupyter.svg" alt="Jupyter" />
+            <figcaption>Jupyter</figcaption>
+          </figure>
+          <figure>
+            <img src="assets/icons/vscode.svg" alt="VS Code" />
+            <figcaption>VS Code</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section section-alt">
+      <div class="container">
+        <h2 class="section-title">Contact</h2>
+        <ul class="contact">
+          <li><strong>Email:</strong> <a href="mailto:sc2855@rutgers.edu">sc2855@rutgers.edu</a></li>
+          <li><strong>Location:</strong> New Jersey, USA</li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      © <span id="year"></span> Siritha Chidipothu
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
