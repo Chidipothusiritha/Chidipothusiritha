@@ -1,0 +1,48 @@
+:root{
+    --bg:#0b0d10; --card:#111418; --muted:#9aa4ad; --text:#e9eef3; --accent:#66e3ff; --ring:#1f2937;
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0;padding:0}
+    body{font-family:Inter,system-ui,Segoe UI,Roboto,Helvetica,Arial,sans-serif;background:var(--bg);color:var(--text);line-height:1.6}
+    img{max-width:100%;display:block}
+    a{color:var(--accent);text-decoration:none}
+    .container{max-width:1060px;margin:0 auto;padding:0 20px}
+    .section{padding:72px 0}
+    .h2{margin-top:0}
+    .accent{color:var(--accent)}
+    .muted{color:var(--muted)}
+    .lead{font-size:1.1rem;color:#d7dee5}
+    .btn{display:inline-block;background:var(--accent);color:#00212a;padding:10px 16px;border-radius:10px;font-weight:600}
+    .btn.ghost{background:transparent;outline:1px solid var(--accent);color:var(--accent)}
+    .btn.small{padding:8px 12px;font-size:.9rem;border-radius:8px}
+    .header{position:sticky;top:0;backdrop-filter:saturate(180%) blur(10px);background:rgba(11,13,16,.6);z-index:50;display:flex;justify-content:space-between;align-items:center;padding:14px 20px;border-bottom:1px solid #151a20}
+    .logo{font-weight:800;letter-spacing:.3px}
+    .nav a{margin-left:16px;color:#cfd7df}
+    .nav a:hover{color:#fff}
+    .skip-link{position:absolute;left:-9999px;top:auto;width:1px;height:1px;overflow:hidden}
+    .skip-link:focus{left:10px;top:10px;width:auto;height:auto;padding:8px 10px;background:#fff;color:#000;border-radius:6px}
+    .hero-grid{display:grid;grid-template-columns:1.2fr .8fr;gap:32px;align-items:center}
+    .hero-img img{border-radius:18px;border:1px solid #1b222b;box-shadow:0 10px 30px rgba(0,0,0,.35)}
+    .about-cards,.grid3{display:grid;gap:16px}
+    .about-cards{grid-template-columns:repeat(4,1fr)}
+    .grid3{grid-template-columns:repeat(3,1fr)}
+    .card{background:var(--card);border:1px solid #1b222b;border-radius:16px;padding:18px}
+    .project p{color:#d0d8e0;margin-top:8px}
+    .pilllist{display:flex;flex-wrap:wrap;gap:10px;padding-left:0;list-style:none}
+    .pilllist li{background:#0e1116;border:1px solid #212a35;border-radius:999px;padding:8px 12px}
+    .tools{display:flex;gap:20px;flex-wrap:wrap}
+    .tools figure{width:92px;text-align:center}
+    .tools figcaption{font-size:.9rem;color:#c8d1da;margin-top:6px}
+    .code-sample summary{cursor:pointer;color:#cfe9ff}
+    .footer{border-top:1px solid #151a20;padding:24px 0;background:#0a0c10;color:#9fb0bd}
+    
+    
+    /* Responsive */
+    @media (max-width: 900px){
+    .about-cards{grid-template-columns:repeat(2,1fr)}
+    .grid3{grid-template-columns:1fr 1fr}
+    .hero-grid{grid-template-columns:1fr}
+    }
+    @media (max-width: 600px){
+    .about-cards,.grid3{grid-template-columns:1fr}
+    }
