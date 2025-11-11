@@ -195,5 +195,59 @@
     margin-right:8px;
   }
   
-  
+/*mobile*/
+/* 1) Fluid grids by default */
+.grid2 { display:grid; gap:28px; grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.grid3 { display:grid; gap:28px; grid-template-columns: repeat(3, minmax(0, 1fr)); }
+.grid4 { display:grid; gap:18px; grid-template-columns: repeat(4, minmax(0, 1fr)); }
+
+/* Make project/skills grids adapt automatically at intermediate widths */
+@media (max-width: 1200px){
+  .grid3 { grid-template-columns: repeat(auto-fit, minmax(260px,1fr)); }
+  .grid4 { grid-template-columns: repeat(auto-fit, minmax(200px,1fr)); }
+}
+
+/* 2) Hero: swap to single column on tablets/phones */
+.hero__grid { display:grid; grid-template-columns: 1.2fr .8fr; align-items:center; gap:32px; }
+@media (max-width: 980px){
+  .hero__grid{ grid-template-columns: 1fr; text-align:center; }
+  .hero__copy{ order:1; }
+  .hero__photo{ order:2; margin:8px auto 0; max-width: 320px; }
+  .actions{ display:flex; justify-content:center; gap:12px; flex-wrap:wrap; }
+}
+
+/* 3) Contact section: stack columns */
+.contact-grid{ display:grid; grid-template-columns: 1.1fr .9fr; gap:28px; align-items:start; }
+@media (max-width: 980px){
+  .contact-grid{ grid-template-columns: 1fr; }
+}
+
+/* 4) Skills bars: keep readable on narrow screens */
+.skill .bar{ height:8px; border-radius:999px; background:var(--muted-2,#e7edf7); overflow:hidden; }
+.skill .bar span{ display:block; height:100%; width:var(--p,70%); background:var(--accent,#4ea3ff); }
+
+/* 5) Header/nav tweaks for small screens (simple, no JS) */
+.header{ position: sticky; top:0; z-index:50; }
+.nav{ display:flex; gap:16px; }
+@media (max-width: 680px){
+  .brand{ font-size:16px; }
+  .nav{ overflow-x:auto; white-space:nowrap; -webkit-overflow-scrolling:touch; scrollbar-width:none; }
+  .nav::-webkit-scrollbar{ display:none; }
+}
+
+/* 6) Typography & spacings on mobile */
+@media (max-width: 680px){
+  h1{ font-size: clamp(28px, 6vw, 36px); line-height:1.15; }
+  .subtitle{ font-size: 18px; }
+  .lead{ font-size: 16px; }
+  .section{ padding: 48px 0; }
+  .wrap{ padding-left: 16px; padding-right: 16px; }
+  .card{ border-radius: 16px; }
+  .btn{ padding:10px 16px; font-size:15px; }
+}
+
+/* 7) Images/buttons are fluid and tappable */
+img{ max-width:100%; height:auto; display:block; }
+.btn{ min-height:44px; }            /* finger-friendly */
+.chip, .nav__link{ padding:8px 10px; }
   
