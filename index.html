@@ -3,8 +3,7 @@
 <head>
   <meta charset="utf-8"/>
   <meta name="viewport" content="width=device-width,initial-scale=1"/>
-  <title>Siritha Chidipothu – ML & NLP</title>
-  <meta name="description" content="Portfolio of Siritha Chidipothu: projects, research, skills, contact."/>
+  <title>Siritha Chidipothu</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -24,199 +23,67 @@
       <a class="nav__link" href="#skills">Skills</a>
       <a class="nav__link" href="#contact">Contact</a>
     </nav>
+    <button class="toggle" aria-label="Theme toggle">◐</button>
   </div>
 </header>
 
 <main>
 
-  <!-- Hero -->
+  <!-- HERO -->
   <section id="home" class="section hero">
     <div class="wrap hero__grid">
       <div class="hero__copy">
         <p class="eyebrow">Hello, I'm</p>
         <h1>Siritha <span class="grad">Chidipothu</span></h1>
-        <h2 class="subtitle">
-            <span id="rotating" aria-label="subtitle"></span>
-          </h2>
+
+        <!-- Rotating subtitle -->
+        <h2 class="subtitle"><span id="rotating" aria-label="subtitle"></span></h2>
+
         <p class="lead">Welcome to my personal website where I showcase my work and skills.</p>
+
         <div class="actions">
           <a class="btn btn--primary" href="#contact">Contact Me</a>
           <a class="btn" href="#projects">View My Work</a>
         </div>
+
         <div class="socials">
           <a class="chip" href="#" aria-label="LinkedIn">in</a>
           <a class="chip" href="#" aria-label="Kaggle">k</a>
           <a class="chip" href="https://github.com/Chidipothusiritha" target="_blank" rel="noopener" aria-label="GitHub">GH</a>
         </div>
       </div>
+
       <div class="hero__photo card photo-card">
         <img src="assets/avatar.png" alt="Portrait of Siritha"/>
       </div>
     </div>
-    <div class="hero__bg"></div>
-  </section>
 
-  <!-- About -->
-  <section id="about" class="section">
-    <div class="wrap">
-      <h2 class="section__title">About Me</h2>
-      <div class="about__grid">
-        <div>
-          <p><strong>Siritha</strong> is a graduate student passionate about Machine Learning and Natural Language Processing, focused on practical models, clean engineering, and clear storytelling.</p>
-          <p>Interests: multilingual NLP, RAG, agentic AI.</p>
-          <a class="btn btn--primary" href="#" target="_blank">Resume</a>
-        </div>
-        <div class="about__cards">
-          <article class="card mini">
-            <h3>Education</h3>
-            <p>MS Data Science (Statistics), Rutgers</p>
-          </article>
-          <article class="card mini">
-            <h3>Experience</h3>
-            <p>Projects across DS/ML, MLOps basics</p>
-          </article>
-          <article class="card mini">
-            <h3>Location</h3>
-            <p>New Jersey, USA</p>
-          </article>
-          <article class="card mini">
-            <h3>Languages</h3>
-            <p>English, Hindi</p>
-          </article>
-        </div>
-      </div>
+    <!-- background decorations -->
+    <div class="hero__bg">
+      <!-- subtle network SVG -->
+      <svg viewBox="0 0 1200 600" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+        <g stroke="#8fb3ff" stroke-opacity=".35">
+          <circle cx="80" cy="120" r="3"/><circle cx="230" cy="60" r="3"/><circle cx="400" cy="140" r="3"/>
+          <circle cx="560" cy="90" r="3"/><circle cx="760" cy="130" r="3"/><circle cx="980" cy="70" r="3"/>
+          <line x1="80" y1="120" x2="230" y2="60"/><line x1="230" y1="60" x2="400" y2="140"/>
+          <line x1="400" y1="140" x2="560" y2="90"/><line x1="560" y1="90" x2="760" y2="130"/>
+          <line x1="760" y1="130" x2="980" y2="70"/>
+        </g>
+      </svg>
     </div>
   </section>
 
-  <!-- Projects -->
-  <section id="projects" class="section alt">
-    <div class="wrap">
-      <h2 class="section__title">My Projects</h2>
-      <div class="grid3">
-        <article class="card project">
-          <img class="project__img" src="assets/placeholder1.jpg" alt="Project cover" />
-          <div class="project__body">
-            <h3>Prices Predictor System</h3>
-            <p>An end-to-end pipeline with ZenML & MLflow. Data prep, train/eval, and tracked experiments.</p>
-            <div class="tags"><span>Python</span><span>ML</span><span>ZenML</span><span>MLflow</span></div>
-            <a class="link" href="#" target="_blank">Source Code →</a>
-          </div>
-        </article>
-        <article class="card project">
-          <img class="project__img" src="assets/placeholder2.jpg" alt="Project cover" />
-          <div class="project__body">
-            <h3>Toolly Studio</h3>
-            <p>Streamlit app for product images using Bria API. Prompt engineering and batch processing.</p>
-            <div class="tags"><span>Python</span><span>Streamlit</span><span>AI</span></div>
-            <a class="link" href="#" target="_blank">Source Code →</a>
-          </div>
-        </article>
-        <article class="card project">
-          <img class="project__img" src="assets/placeholder3.jpg" alt="Project cover" />
-          <div class="project__body">
-            <h3>Book Recommender</h3>
-            <p>Hybrid recommender (content + collaborative) with simple web UI.</p>
-            <div class="tags"><span>Python</span><span>Recommenders</span></div>
-            <a class="link" href="#" target="_blank">Live Demo →</a>
-          </div>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <!-- Research -->
-  <section id="research" class="section">
-    <div class="wrap">
-      <h2 class="section__title">Research</h2>
-      <div class="grid2">
-        <article class="card paper">
-          <h3>Societal Impacts and Public Perception of Chatbots: Implications for Individuals and Organizations</h3>
-          <p class="muted">ResearchGate Preprint, 2025</p>
-          <p><strong>Siritha Chidipothu</strong>, et al.</p>
-          <div class="tags"><span>Chatbots</span><span>AI Ethics</span><span>Societal Impact</span></div>
-          <a class="btn" target="_blank" rel="noopener"
-             href="https://www.researchgate.net/publication/395721509_Societal_Impacts_and_Public_Perception_of_Chatbots_Implications_for_Individuals_and_Organizations?channel=doi&linkId=68d1cedf68064a19c0b9630b&showFulltext=true">View Full Text</a>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <!-- Skills -->
-  <section id="skills" class="section alt">
-    <div class="wrap">
-      <h2 class="section__title">My Skills</h2>
-
-      <h3 class="h3 center">Programming & Data</h3>
-      <div class="grid4 skills">
-        <article class="card skill"><div class="skill__icon">🐍</div><div>Python</div><div class="bar"><span style="--p:90%"></span></div></article>
-        <article class="card skill"><div class="skill__icon">🗄️</div><div>SQL</div><div class="bar"><span style="--p:85%"></span></div></article>
-        <article class="card skill"><div class="skill__icon">📦</div><div>Pandas</div><div class="bar"><span style="--p:85%"></span></div></article>
-        <article class="card skill"><div class="skill__icon">🧮</div><div>NumPy</div><div class="bar"><span style="--p:80%"></span></div></article>
-      </div>
-
-      <h3 class="h3 center">Modeling & ML</h3>
-      <div class="grid4 skills">
-        <article class="card skill"><div class="skill__icon">🧠</div><div>TensorFlow</div><div class="bar"><span style="--p:70%"></span></div></article>
-        <article class="card skill"><div class="skill__icon">📈</div><div>scikit-learn</div><div class="bar"><span style="--p:90%"></span></div></article>
-        <article class="card skill"><div class="skill__icon">🚀</div><div>XGBoost</div><div class="bar"><span style="--p:85%"></span></div></article>
-        <article class="card skill"><div class="skill__icon">⚡</div><div>LightGBM</div><div class="bar"><span style="--p:80%"></span></div></article>
-      </div>
-
-      <h3 class="h3 center">Tools & Platforms</h3>
-      <div class="tools">
-        <figure class="card tool"><img src="assets/icons/github.svg" alt="Git"/><figcaption>Git</figcaption></figure>
-        <figure class="card tool"><img src="assets/icons/jupyter.svg" alt="Jupyter"/><figcaption>Jupyter</figcaption></figure>
-        <figure class="card tool"><img src="assets/icons/vscode.svg" alt="VS Code"/><figcaption>VS Code</figcaption></figure>
-        <figure class="card tool"><div class="tool__icon">⬛</div><figcaption>Cursor</figcaption></figure>
-      </div>
-    </div>
-  </section>
-
-  <!-- Contact -->
-  <section id="contact" class="section">
-    <div class="wrap">
-      <h2 class="section__title">Contact Me</h2>
-      <div class="grid2 contact__grid">
-        <div class="contact__left">
-          <p class="muted">Feel free to reach out to me for any questions or opportunities!</p>
-          <article class="card field">
-            <div class="field__icon">✉️</div>
-            <div>
-              <div class="field__title">Email</div>
-              <a href="mailto:sc2855@rutgers.edu">sc2855@rutgers.edu</a>
-            </div>
-          </article>
-          <article class="card field">
-            <div class="field__icon">📍</div>
-            <div>
-              <div class="field__title">Location</div>
-              <div>New Jersey, USA</div>
-            </div>
-          </article>
-        </div>
-        <div class="card code">
-<pre><code># Python ML Code Sample
-from sklearn.model_selection import train_test_split
-from sklearn.ensemble import RandomForestClassifier
-from sklearn.datasets import load_iris
-from sklearn.metrics import accuracy_score
-
-X, y = load_iris(return_X_y=True)
-Xtr, Xte, ytr, yte = train_test_split(X, y, test_size=0.25, random_state=42)
-m = RandomForestClassifier(n_estimators=200, random_state=42).fit(Xtr, ytr)
-print("Accuracy:", accuracy_score(yte, m.predict(Xte)))
-</code></pre>
-        </div>
-      </div>
-    </div>
-  </section>
+  <!-- dummy sections so nav anchors work; replace later -->
+  <section id="about" class="section"><div class="wrap"><h2 class="section__title">About</h2></div></section>
+  <section id="projects" class="section alt"><div class="wrap"><h2 class="section__title">Projects</h2></div></section>
+  <section id="research" class="section"><div class="wrap"><h2 class="section__title">Research</h2></div></section>
+  <section id="skills" class="section alt"><div class="wrap"><h2 class="section__title">Skills</h2></div></section>
+  <section id="contact" class="section"><div class="wrap"><h2 class="section__title">Contact</h2></div></section>
 
 </main>
 
 <footer class="footer">
-  <div class="wrap">
-    <div>© <span id="year"></span> Siritha Chidipothu</div>
-  </div>
+  <div class="wrap">© <span id="year"></span> Siritha Chidipothu</div>
 </footer>
 
 <script src="script.js"></script>
