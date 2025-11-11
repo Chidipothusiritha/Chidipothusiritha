@@ -249,9 +249,12 @@
 <section id="contact" class="section">
     <div class="wrap">
       <h2 class="section__title">Contact</h2>
+  
       <div class="grid2 contact-grid">
+        <!-- LEFT COLUMN: stack cards -->
         <div class="contact-left">
           <p class="lead">Feel free to reach out to me for any questions or opportunities!</p>
+  
           <article class="card field">
             <div class="field__icon">✉️</div>
             <div>
@@ -259,6 +262,7 @@
               <a href="mailto:sirithachidipothu@rutgers.edu">sirithachidipothu@rutgers.edu</a>
             </div>
           </article>
+  
           <article class="card field">
             <div class="field__icon">📍</div>
             <div>
@@ -266,19 +270,25 @@
               <div>New Jersey, USA</div>
             </div>
           </article>
-        </div>
-        <article class="card field">
+  
+          <!-- Resume card (inside contact-left) -->
+          <article class="card field">
             <div class="field__icon">📄</div>
             <div>
               <div class="field__title">Resume</div>
-              <a href="https://docs.google.com/document/d/1kL2arQl38N1kGpU6RKVH66tzGT_9WZc3iWLigDuzgfM/edit?usp=sharing" target="_blank" rel="noopener">
+              <!-- Google Drive link here -->
+              <a class="btn btn--primary"
+                 href="https://drive.google.com/file/d/1YourFileID/view?usp=sharing"
+                 target="_blank" rel="noopener">
                 View Resume
               </a>
             </div>
           </article>
+        </div>
   
+        <!-- RIGHT COLUMN: code block -->
         <div class="card code">
-  <pre><code># Python ML Code Sample
+          <pre><code># Python ML Code Sample
   from sklearn.model_selection import train_test_split
   from sklearn.ensemble import RandomForestClassifier
   from sklearn.datasets import load_iris
@@ -293,6 +303,7 @@
       </div>
     </div>
   </section>
+  
   
   
 </main>
