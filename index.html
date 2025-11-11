@@ -74,11 +74,163 @@
   </section>
 
   <!-- dummy sections so nav anchors work; replace later -->
-  <section id="about" class="section"><div class="wrap"><h2 class="section__title">About</h2></div></section>
-  <section id="projects" class="section alt"><div class="wrap"><h2 class="section__title">Projects</h2></div></section>
-  <section id="research" class="section"><div class="wrap"><h2 class="section__title">Research</h2></div></section>
-  <section id="skills" class="section alt"><div class="wrap"><h2 class="section__title">Skills</h2></div></section>
-  <section id="contact" class="section"><div class="wrap"><h2 class="section__title">Contact</h2></div></section>
+  <section id="about" class="section">
+    <div class="wrap">
+      <h2 class="section__title">About</h2>
+  
+      <div class="about-grid">
+        <div>
+          <p><strong>Hi, I’m Siritha.</strong> I build practical ML/NLP projects with clean engineering and clear storytelling. Current interests: multilingual NLP, RAG, and agentic AI.</p>
+          <p>I like shipping end-to-end: data prep → modeling → evaluation → simple deploy (FastAPI/Docker).</p>
+        </div>
+  
+        <div class="about-cards">
+          <article class="card mini">
+            <h3>Education</h3>
+            <p>MS Data Science (Statistics) — Rutgers</p>
+          </article>
+          <article class="card mini">
+            <h3>Experience</h3>
+            <p>ML projects, MLOps basics</p>
+          </article>
+          <article class="card mini">
+            <h3>Location</h3>
+            <p>New Jersey, USA</p>
+          </article>
+          <article class="card mini">
+            <h3>Interests</h3>
+            <p>Code-mixed NLP, RAG, agents</p>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <section id="projects" class="section alt">
+    <div class="wrap">
+      <h2 class="section__title">Projects</h2>
+  
+      <div class="grid3">
+        <article class="card project">
+          <img class="project__img" src="assets/placeholder1.jpg" alt="Credit Risk Model cover">
+          <div class="project__body">
+            <h3>Credit Risk Model</h3>
+            <p>Feature engineering + RF/XGBoost with realistic metrics and SHAP explainability.</p>
+            <div class="tags"><span>Python</span><span>sklearn</span><span>XGBoost</span></div>
+            <a class="link" href="https://github.com/Chidipothusiritha" target="_blank">Source Code →</a>
+          </div>
+        </article>
+  
+        <article class="card project">
+          <img class="project__img" src="assets/placeholder2.jpg" alt="Code-Mixed NER cover">
+          <div class="project__body">
+            <h3>Code-Mixed NER</h3>
+            <p>mBERT/XLM-R fine-tuning for named entities on EN–ES social text.</p>
+            <div class="tags"><span>NLP</span><span>mBERT</span><span>HuggingFace</span></div>
+            <a class="link" href="https://github.com/Chidipothusiritha" target="_blank">Source Code →</a>
+          </div>
+        </article>
+  
+        <article class="card project">
+          <img class="project__img" src="assets/placeholder3.jpg" alt="Lung Disease cover">
+          <div class="project__body">
+            <h3>Lung Disease Detection</h3>
+            <p>YOLO/EfficientNet for TB vs Pneumonia; FastAPI inference.</p>
+            <div class="tags"><span>CV</span><span>YOLO</span><span>FastAPI</span></div>
+            <a class="link" href="https://github.com/Chidipothusiritha" target="_blank">Source Code →</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+  
+  <section id="research" class="section">
+    <div class="wrap">
+      <h2 class="section__title">Research</h2>
+  
+      <div class="grid2">
+        <article class="card paper">
+          <h3>Societal Impacts and Public Perception of Chatbots</h3>
+          <p class="muted">ResearchGate Preprint, 2025</p>
+          <p><strong>Siritha Chidipothu</strong>, et al.</p>
+          <div class="tags"><span>Chatbots</span><span>AI Ethics</span><span>Societal Impact</span></div>
+          <a class="btn" target="_blank" rel="noopener"
+             href="https://www.researchgate.net/publication/395721509_Societal_Impacts_and_Public_Perception_of_Chatbots_Implications_for_Individuals_and_Organizations?showFulltext=true">
+            View Full Text
+          </a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills" class="section alt">
+  <div class="wrap">
+    <h2 class="section__title">Skills</h2>
+
+    <h3 class="h3 center">Programming & Data</h3>
+    <div class="grid4 skills">
+      <article class="card skill"><div class="skill__icon">🐍</div><div>Python</div><div class="bar"><span style="--p:90%"></span></div></article>
+      <article class="card skill"><div class="skill__icon">🗃️</div><div>SQL</div><div class="bar"><span style="--p:85%"></span></div></article>
+      <article class="card skill"><div class="skill__icon">📦</div><div>Pandas</div><div class="bar"><span style="--p:85%"></span></div></article>
+      <article class="card skill"><div class="skill__icon">🧮</div><div>NumPy</div><div class="bar"><span style="--p:80%"></span></div></article>
+    </div>
+
+    <h3 class="h3 center">Modeling & ML</h3>
+    <div class="grid4 skills">
+      <article class="card skill"><div class="skill__icon">🧠</div><div>TensorFlow</div><div class="bar"><span style="--p:70%"></span></div></article>
+      <article class="card skill"><div class="skill__icon">📈</div><div>scikit-learn</div><div class="bar"><span style="--p:90%"></span></div></article>
+      <article class="card skill"><div class="skill__icon">🚀</div><div>XGBoost</div><div class="bar"><span style="--p:85%"></span></div></article>
+      <article class="card skill"><div class="skill__icon">⚡</div><div>LightGBM</div><div class="bar"><span style="--p:80%"></span></div></article>
+    </div>
+
+    <h3 class="h3 center">Tools & Platforms</h3>
+    <div class="tools">
+      <figure class="card tool"><img src="assets/icons/github.svg" alt="Git"><figcaption>Git</figcaption></figure>
+      <figure class="card tool"><img src="assets/icons/jupyter.svg" alt="Jupyter"><figcaption>Jupyter</figcaption></figure>
+      <figure class="card tool"><img src="assets/icons/vscode.svg" alt="VS Code"><figcaption>VS Code</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="section">
+    <div class="wrap">
+      <h2 class="section__title">Contact</h2>
+      <div class="grid2 contact-grid">
+        <div class="contact-left">
+          <p class="lead">Feel free to reach out to me for any questions or opportunities!</p>
+          <article class="card field">
+            <div class="field__icon">✉️</div>
+            <div>
+              <div class="field__title">Email</div>
+              <a href="mailto:sirithachidipothu@rutgers.edu">sirithachidipothu@rutgers.edu</a>
+            </div>
+          </article>
+          <article class="card field">
+            <div class="field__icon">📍</div>
+            <div>
+              <div class="field__title">Location</div>
+              <div>New Jersey, USA</div>
+            </div>
+          </article>
+        </div>
+  
+        <div class="card code">
+  <pre><code># Python ML Code Sample
+  from sklearn.model_selection import train_test_split
+  from sklearn.ensemble import RandomForestClassifier
+  from sklearn.datasets import load_iris
+  from sklearn.metrics import accuracy_score
+  
+  X, y = load_iris(return_X_y=True)
+  Xtr, Xte, ytr, yte = train_test_split(X, y, test_size=0.25, random_state=42)
+  m = RandomForestClassifier(n_estimators=200, random_state=42).fit(Xtr, ytr)
+  print("Accuracy:", accuracy_score(yte, m.predict(Xte)))
+  </code></pre>
+        </div>
+      </div>
+    </div>
+  </section>
+  
   
 </main>
 
