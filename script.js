@@ -1,7 +1,8 @@
-// footer year
-document.getElementById("year") && (document.getElementById("year").textContent = new Date().getFullYear());
+// year
+const y = document.getElementById("year");
+if (y) y.textContent = new Date().getFullYear();
 
-// active nav pill on click (basic)
+// nav active on click
 document.querySelectorAll(".nav__link").forEach(a=>{
   a.addEventListener("click", () => {
     document.querySelectorAll(".nav__link").forEach(x=>x.classList.remove("active"));
@@ -9,13 +10,14 @@ document.querySelectorAll(".nav__link").forEach(a=>{
   });
 });
 
-// rotating subtitle typing effect
+// rotating subtitle
 document.addEventListener("DOMContentLoaded", () => {
   const el = document.getElementById("rotating");
+  if (!el) return;
   const phrases = [
     "Deep Learning Enthusiast",
     "ML & NLP Enthusiast",
-    "Master's in Data Science Student @ Rutgers",
+    "Data Science Student @ Rutgers",
     "RAG & Agentic AI Explorer",
     "NLP Researcher"
   ];
