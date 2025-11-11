@@ -148,6 +148,15 @@
     color:#4b74ff;
     opacity:.9;
   }
+  .field a {
+    color: var(--accent);
+    text-decoration: none;
+    font-weight: 500;
+  }
+  
+  .field a:hover {
+    text-decoration: underline;
+  }
   .about-points li{ padding-left:36px; } /* make room for the check */
   
   /* pill label */
