@@ -1,16 +1,10 @@
-// Simple typewriter effect for the hero subtitle
-const roles = ["Machine Learning Engineer","Data Scientist","MLOps Enthusiast"];
-const target = document.getElementById("typewriter");
-let i = 0;
-function cycle(){
-if(!target) return;
-target.textContent = roles[i % roles.length];
-i += 1;
-}
-cycle();
-setInterval(cycle, 2200);
+// year
+document.getElementById("year").textContent = new Date().getFullYear();
 
-
-// Year in footer
-const y = document.getElementById('year');
-if (y) y.textContent = new Date().getFullYear();
+// highlight active nav on click (basic)
+document.querySelectorAll(".nav__link").forEach(a=>{
+  a.addEventListener("click", () => {
+    document.querySelectorAll(".nav__link").forEach(x=>x.classList.remove("active"));
+    a.classList.add("active");
+  });
+});
