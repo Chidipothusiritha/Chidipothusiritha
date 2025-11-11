@@ -119,4 +119,52 @@
     animation: caret 0.8s steps(1) infinite;
   }
   @keyframes caret { 50% { border-color: transparent; } }
+
+  /* ===== HOTFIX: force light theme & tidy hero ===== */
+
+/* 1) Force the page background/text to light */
+:root{
+    --bg:#ffffff;
+    --panel:#ffffff;
+    --stroke:#e7e9f2;
+    --text:#0f172a;
+    --muted:#6b7280;
+    --blue:#3b82f6;
+  }
+  body{
+    background: var(--bg) !important;
+    color: var(--text) !important;
+  }
+  
+  /* 2) Light sticky header */
+  .header{
+    background:#eef2ffbd !important;
+    border-bottom:1px solid #eaefff !important;
+    backdrop-filter:saturate(180%) blur(10px);
+  }
+  
+  /* 3) Hero: keep split layout, remove any dark/blur bg */
+  .hero{ background: transparent !important; }
+  .hero__bg{ display:none !important; }   /* hide any old background layer */
+  .hero__copy h1{ color:#0f172a !important; }
+  .subtitle{ color:#6b8bff !important; }
+  .lead{ color:var(--muted) !important; }
+  
+  /* Buttons (blue primary + white ghost) */
+  .btn{ background:#fff; border:1px solid #cfe0ff; color:#0f172a; box-shadow:0 10px 30px rgba(23,28,45,.08); }
+  .btn.btn--primary{ background: linear-gradient(135deg,#3b82f6,#7aa2ff) !important; border:0; color:#fff !important; }
+  
+  /* 4) Prevent any giant images/SVGs */
+  img, svg{ max-width:100% !important; height:auto !important; }
+  .tools img, .tools svg{ width:56px !important; height:56px !important; }
+  
+  /* 5) Cards stay white */
+  .card{ background:#fff !important; border:1px solid var(--stroke) !important; }
+  
+  /* 6) Section background alternation (subtle) */
+  .section.alt{ background: linear-gradient(180deg,#ffffff 0%, #f6f8ff 100%) !important; }
+  
+  /* 7) Social chips stay on one line */
+  .socials{ display:flex; gap:10px; flex-wrap:wrap; align-items:center; }
+  
   
